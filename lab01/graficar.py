@@ -13,4 +13,11 @@ y = df['market-price']
 plt.plot(x,y)
 plt.xticks(range(0,365,50))
 plt.grid()
+# Abrir la ventana de la grafica maximizada.
+fig_manager = plt.get_current_fig_manager()
+fig_manager.window.showMaximized()
+plt.xlabel("Fecha", color="red", fontsize="14")
+plt.ylabel("Precio", color="red", fontsize="14")
+titulo = "Precio diario del Bitcoin durante el ultimo año."
+plt.title(titulo, color="red", fontsize="17")
 plt.show()
