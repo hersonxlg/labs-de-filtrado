@@ -11,6 +11,7 @@ xindex = round(linspace(1,366,8));
 
 y2 = movmean(y,7);
 
+figure('units','normalized','outerposition',[0 0 1 1])
 plot(y2,'LineWidth',1);
 set(gca, 'xtick', xindex,"fontsize", 15);
 grid();
